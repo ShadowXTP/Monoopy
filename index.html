@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trait Manager</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoopy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>First Trait</h1>
-        <div id="first-trait-selector">
-            <label for="traits">Select a Trait:</label>
-            <select id="traits">
-            <!-- List of traits -->
-            </select>
-            <button onclick="selectTrait()">Select Trait</button>
-        </div>
-        <div id="first-trait-info">
-            <h2 id="first-trait-name">Trait Name</h2>
-            <p id="first-trait-description">Description</p>
-            <p>Uses left: <span id="first-trait-uses">0</span></p>
-            <button onclick="useTrait()">Use Trait</button>
-        </div>
-        <div>
-            <h1>Second Trait</h1>
-            <div id="second-trait-selector">
-                <label for="traits">Select a Trait:</label>
-                <select id="traits">
-                <!-- List of traits -->
-                </select>
-                <button onclick="selectTrait()">Select Trait</button>
-            </div>
-            <div id="first-trait-info">
-                <h2 id="first-trait-name">Trait Name</h2>
-                <p id="first-trait-description">Description</p>
-                <p>Uses left: <span id="first-trait-uses">0</span></p>
-                <button onclick="useTrait()">Use Trait</button>
-            </div>
-    </div>
-  <script src="script.js"></script>
+
+<h1 id="title">Mon😳opy</h1>
+<div>
+    <label for="firsttrait">First Trait:</label>
+    <select id="firsttrait" onchange="updateDropdowns()">
+        <option value="Prediction">Prediction</option>
+        <option value="Businessman">Businessman</option>
+        <option value="Insurance">Insurance</option>
+        <option value="Crowd Favourite">Crowd Favourite</option>
+        <option value="Master Negotiator">Master Negotiator</option>
+        <option value="Blizzard">Blizzard</option>
+        <option value="Parasite">Parasite</option>
+        <option value="Hibernate">Hibernate</option>
+        <option value="Welfare">Welfare</option>
+        <option value="Reserved Parking">Reserved Parking</option>
+        <option value="Lucky Draw">Lucky Draw</option>
+        <option value="Overpower">Overpower</option>
+        <option value="Warrigal Road">Warrigal Road</option>
+        <option value="Nates House">Nates House</option>
+        <option value="Viv Fart">Viv Fart</option>
+        <option value="Bees Dick">Bees Dick</option>
+        <option value="Conductor">Conductor</option>
+        <option value="Warden">Warden</option>
+        <option value="Nepotism Baby">Nepotism Baby</option>
+        <option value="Estate Auctioneer">Estate Auctioneer</option>
+        <option value="The Godfather">God Father</option>
+        <option value="Craps Addict">Craps Addict</option>
+        <option value="Secret Tenant">Secret Tenant</option>
+    </select>
+</div>
+<div>
+    <label for="secondtrait">Second Trait:</label>
+    <select id="secondtrait" onchange="updateDropdowns()">
+        <option value="Prediction">Prediction</option>
+        <option value="Businessman">Businessman</option>
+        <option value="Insurance">Insurance</option>
+        <option value="Crowd Favourite">Crowd Favourite</option>
+        <option value="Master Negotiator">Master Negotiator</option>
+        <option value="Blizzard">Blizzard</option>
+        <option value="Parasite">Parasite</option>
+        <option value="Hibernate">Hibernate</option>
+        <option value="Welfare">Welfare</option>
+        <option value="Reserved Parking">Reserved Parking</option>
+        <option value="Lucky Draw">Lucky Draw</option>
+        <option value="Overpower">Overpower</option>
+        <option value="Warrigal Road">Warrigal Road</option>
+        <option value="Nates House">Nates House</option>
+        <option value="Viv Fart">Viv Fart</option>
+        <option value="Bees Dick">Bees Dick</option>
+        <option value="Conductor">Conductor</option>
+        <option value="Warden">Warden</option>
+        <option value="Nepotism Baby">Nepotism Baby</option>
+        <option value="Estate Auctioneer">Estate Auctioneer</option>
+        <option value="The Godfather">God Father</option>
+        <option value="Craps Addict">Craps Addict</option>
+        <option value="Secret Tenant">Secret Tenant</option>
+    </select>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
