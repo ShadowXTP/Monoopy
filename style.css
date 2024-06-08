@@ -1,35 +1,61 @@
 body {
     font-family: Copperplate, fantasy;
-    background-color: #ffffff;
+    background-color: #DFC1FA;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
   }
   
 h1.flushed {
     font-family: fantasy, cop;
     text-align: center;
+    font-size: 100px;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #136180;
+    font-family: fantasy, cop;
+    text-align: justify;
+    overflow: auto;
+    background-color: #a36bd4;
   }
   
   li {
-    float: right;
+    display: inline-block;
+    text-align: center;
   }
   
   li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    align-content: center;
+    padding: 15px 140px;
     text-decoration: none;
   }
-  
+
   li a:hover {
-    background-color: #25a5d8;
+    background-color: #6e20b3;
+  }
+
+  li homeflush:hover {
+    background-color: #ece4e4;
+  }
+
+  #trait-selector {
+    color: #000000c2;
+    font-family: fantasy, cop;
+  }
+
+  #trait-info{
+    color:#000000c2;
+    font-family: fantasy, cop;
+  }
+
+  
+  #mainobj{
+    font-family: fantasy, cop;
+    text-align: center;
+    overflow: auto;
   }
