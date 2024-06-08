@@ -11,15 +11,22 @@ h1.flushed {
     font-size: 100px;
 }
 
-ul {
+.navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px, 5px;
     font-family: fantasy, cop;
     text-align: justify;
     overflow: auto;
-    background-color: #a36bd4;
-  }
+    border-bottom: black;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-style: line;
+    background-color: transparent;
+ }
+
+
   
   li {
     display: inline-block;
@@ -36,12 +43,12 @@ ul {
   }
 
   li a:hover {
-    background-color: #6e20b3;
+    background-color: #a167d3;
+    border-radius: 40px;
+    border-style: groove;
+    border-color: rgb(117, 9, 131);
   }
 
-  li homeflush:hover {
-    background-color: #ece4e4;
-  }
 
   #trait-selector {
     color: #000000c2;
@@ -58,4 +65,31 @@ ul {
     font-family: fantasy, cop;
     text-align: center;
     overflow: auto;
+    
   }
+
+  .list-group{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    align-content: center;
+    text-decoration: none;
+  }
+
+  .list-group-item{
+    background-color: transparent;
+  }
+
+.bg {
+    background-image: url(assets/images/Backdrop.webp);
+    background-repeat: no-repeat;
+    background-blend-mode:inherit;
+    background-size: 100%;
+}
+
+.squarehopefully::after{
+    background-color: white;
+    background-size: 100%;
+    opacity: 100%;
+}
+
