@@ -190,4 +190,3 @@ const traits = [
   }
   
   populateTraits();
-  
