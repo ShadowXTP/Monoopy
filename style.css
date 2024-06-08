@@ -1,11 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Copperplate, fantasy;
     background-color: #ffffff;
     margin: 0;
     padding: 20px;
   }
   
 h1.flushed {
+    font-family: fantasy, cop;
     text-align: center;
 }
 
