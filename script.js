@@ -45,11 +45,6 @@ const traits = [
         uses: Infinity
       },
       {
-        name: "Desperation",
-        description: "If hit with a rent that would bankrupt you, you may pay nothing and go to jail, receiving x4 multiplier on trait income while in jail (1 use).",
-        uses: 1
-      },
-      {
         name: "Reserved Parking",
         description: "If you land on Free Parking, you receive $300 from the bank if there's $100 or less in the center. If another player lands on Free Parking, you receive 50% of the payout won.",
         uses: Infinity
@@ -58,11 +53,6 @@ const traits = [
         name: "Lucky Draw",
         description: "When you receive a good luck card, draw 2 and choose one. You may keep one and give one to another player (3 uses).",
         uses: 3
-      },
-      {
-        name: "Poker Face",
-        description: "Peek at the next 3 development cards but you may not buy any on this turn (2 uses).",
-        uses: 2
       },
       {
         name: "Overpower",
@@ -100,16 +90,6 @@ const traits = [
         uses: Infinity
       },
       {
-        name: "Hourly Rate",
-        description: "The bank pays you $40 for every turn a player is in jail.",
-        uses: Infinity
-      },
-      {
-        name: "Police Chase",
-        description: "If a player escapes jail, they are Wanted. You may send them back to jail if you land on the same square.",
-        uses: Infinity
-      },
-      {
         name: "Nepotism Baby",
         description: "Begin with an additional $600. Your first property and house are paid by the bank. You can't buy development cards on the first 2 turns.",
         uses: Infinity
@@ -120,19 +100,9 @@ const traits = [
         uses: 2
       },
       {
-        name: "Insider Connections",
-        description: "Upon landing on a property, you may purchase a different property within the same color set (2 uses).",
-        uses: 2
-      },
-      {
         name: "The Godfather",
         description: "Paid an extra $30 on board income and $50 on card income. Avoid board taxes. Make another player go to jail instead of you (1 use).",
         uses: 1
-      },
-      {
-        name: "Hitman for Hire",
-        description: "Kidnap a player and hold them for ransom. They pay you based on dice roll value to escape. If they refuse, they are killed at the end of turn 2 (3 uses).",
-        uses: 3
       },
       {
         name: "Craps Addict",
@@ -140,18 +110,8 @@ const traits = [
         uses: Infinity
       },
       {
-        name: "Rehab Escapist",
-        description: "You can choose not to be sent to jail after 3 double rolls until you roll a non-double combination.",
-        uses: Infinity
-      },
-      {
         name: "Secret Tenant",
         description: "Choose 3 properties at the start. Own 1/3 properties: $500, 2/3: $750, 3/3: $750 and 1 victory point.",
-        uses: Infinity
-      },
-      {
-        name: "Splooge",
-        description: "Before rolling the dice, scream 'SPLOOGE' and pay $200 to double all income/expenses until your next turn.",
         uses: Infinity
       },
       {
@@ -162,7 +122,7 @@ const traits = [
   ];
   
   function populateTraits() {
-    const select = document.getElementById("traits");
+    const select = document.getElementById("first-traits");
     traits.forEach((trait, index) => {
       const option = document.createElement("option");
       option.value = index;
@@ -174,10 +134,10 @@ const traits = [
   function selectTrait() {
     const select = document.getElementById("traits");
     const selectedTrait = traits[select.value];
-    document.getElementById("trait-name").textContent = selectedTrait.name;
-    document.getElementById("trait-description").textContent = selectedTrait.description;
-    document.getElementById("trait-uses").textContent = selectedTrait.uses;
-    document.getElementById("trait-info").dataset.index = select.value;
+    document.getElementById("first-trait-name").textContent = selectedTrait.name;
+    document.getElementById("first-trait-description").textContent = selectedTrait.description;
+    document.getElementById("first-trait-uses").textContent = selectedTrait.uses;
+    document.getElementById("first-trait-info").dataset.index = select.value;
   }
   
   function useTrait() {
@@ -185,7 +145,7 @@ const traits = [
     const trait = traits[traitIndex];
     if (trait.uses > 0 && trait.uses !== Infinity) {
       trait.uses--;
-      document.getElementById("trait-uses").textContent = trait.uses;
+      document.getElementById("first-trait-uses").textContent = trait.uses;
     }
   }
   
