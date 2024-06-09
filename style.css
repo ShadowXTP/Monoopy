@@ -5,45 +5,47 @@ body {
     padding: 0px;
   }
   
-h1.flushed {
-    font-family: fantasy, cop;
-    text-align: center;
-    font-size: 100px;
+
+#homepageb {
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+  
+.flushed{
+  border: none;
+  background-color: transparent;
+}
+
 
 .navbar {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px, 5px;
     font-family: fantasy, cop;
-    text-align: justify;
+    text-align: center;
     overflow: auto;
     border-bottom: black;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-style: line;
-    background-color: transparent;
+    height: auto;
+    width: auto;
  }
 
 
-  
-  li {
-    display: inline-block;
-    text-align: center;
-  }
+
   
   li a {
     display: inline-block;
     color: rgb(255, 255, 255);
-    text-align: justify;
+    text-align: center;
     align-content: center;
-    padding: 15px 140px;
+    padding: 0px 25px;
+    font-size: x-large;
     text-decoration: none;
   }
 
   li a:hover {
-    background-color: #a167d3;
+    background-color: #a034ff;
     border-radius: 40px;
     border-style: groove;
     border-color: rgb(117, 9, 131);
@@ -64,27 +66,27 @@ h1.flushed {
   #mainobj{
     font-family: fantasy, cop;
     text-align: center;
-    overflow: auto;
     background-color: rgb(255, 255, 255, 0.5);
   }
+
+  .vp{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    align-content: center;
+    text-decoration: none;
+  }
+
+  .vp-item{
+    background-color: transparent;
+  }
+
 
   #rules{
     font-family: fantasy, cop;
     text-align: center;
     overflow: auto;
     background-color: rgb(255, 255, 255, 0.5);
-  }
-
-  .list-group{
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    align-content: center;
-    text-decoration: none;
-  }
-
-  .list-group-item{
-    background-color: transparent;
   }
 
 .bg {
