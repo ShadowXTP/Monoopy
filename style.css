@@ -2,45 +2,61 @@ body {
     font-family: Copperplate, fantasy;
     background-color: #DFC1FA;
     margin: 0;
+    margin-right: 0;
     padding: 0px;
   }
-  
 
-#homepageb {
+
+.cranberry{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  background-color: indigo;
+}
+
+.flushednav {
   width: 100%;
   height: 70px;
-  border: none;
   display: flex;
   align-items: center;
-  justify-content: left;
-  
+  justify-content: center;
+  background-color: #6a5acd;
 }
-  
+
+ol, ul{
+  padding: 0%;
+}
+
+
+#flushed{
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .flushed{
   border: none;
   background-color: transparent;
+  list-style-type: none;
+  display: flex;
+  align-self: center;
 }
 
 
 .navbar {
     list-style-type: none;
     font-family: fantasy, cop;
-    text-align: center;
+    text-align: left;
     overflow: auto;
     border-bottom: black;
-    height: auto;
-    width: auto;
- }
+}
 
   
   li a {
-    display: inline-block;
+    display: flex;
     color: rgb(255, 255, 255);
     text-align: left;
     align-content: left;
-    padding: 0px 25px;
+    padding: 0px 0px;
     font-size: x-large;
-    text-decoration: none;
   }
 
   li a:hover {
@@ -50,18 +66,6 @@ body {
     border-color: rgb(117, 9, 131);
   }
 
-
-  #trait-selector {
-    color: #000000c2;
-    font-family: fantasy, cop;
-  }
-
-  #trait-info{
-    color:#000000c2;
-    font-family: fantasy, cop;
-  }
-
-  
   #mainobj{
     font-family: fantasy, cop;
     text-align: center;
@@ -107,4 +111,13 @@ body {
 }
 
 
+/* GameTracker.html  */
+#trait-selector {
+  color: #000000c2;
+  font-family: fantasy, cop;
+}
 
+#trait-info{
+  color:#000000c2;
+  font-family: fantasy, cop;
+}
