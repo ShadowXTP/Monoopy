@@ -8,11 +8,12 @@ body {
 
 #homepageb {
   width: 100%;
-  height: auto;
+  height: 70px;
   border: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  
 }
   
 .flushed{
@@ -31,14 +32,12 @@ body {
     width: auto;
  }
 
-
-
   
   li a {
     display: inline-block;
     color: rgb(255, 255, 255);
-    text-align: center;
-    align-content: center;
+    text-align: left;
+    align-content: left;
     padding: 0px 25px;
     font-size: x-large;
     text-decoration: none;
@@ -89,11 +88,23 @@ body {
     background-color: rgb(255, 255, 255, 0.5);
   }
 
+  #victorypoints{
+      font-family: fantasy, cop;
+      text-align: center;
+      overflow: auto;
+      background-color: rgb(255, 255, 255, 0.5);
+  }
+
 .bg {
-    background-image: url(assets/images/Backdrop.webp);
+    background-image: url(assets/images/cube.avif);
     background-repeat: no-repeat;
-    background-blend-mode:inherit;
+    background-blend-mode: overlay;
     background-size: 100%;
 }
+
+.pcount-body{
+  background-color: white;
+}
+
 
 
