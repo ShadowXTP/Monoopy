@@ -23,81 +23,90 @@ body {
   background-color: #6a5acd;
 }
 
-ol, ul{
-  padding: 0%;
-}
-
-
 #flushed{
   padding-right: 0px;
   padding-left: 0px;
 }
+
 .flushed{
   border: none;
   background-color: transparent;
-  list-style-type: none;
   display: flex;
   align-self: center;
 }
 
 
-.navbar {
-    list-style-type: none;
-    font-family: fantasy, cop;
-    text-align: left;
-    overflow: auto;
-    border-bottom: black;
+ol, ul{
+  padding: 0%;
 }
 
+#homepagb{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.navbar {
+  display: flex;
+  font-family: fantasy, cop;
+  text-align: center;
+  overflow: auto;
+  justify-content: center;
+  border-bottom: black;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
   
-  li a {
-    display: flex;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    align-content: left;
-    padding: 0px 0px;
-    font-size: x-large;
-  }
-
-  li a:hover {
-    background-color: #a034ff;
-    border-radius: 40px;
-    border-style: groove;
-    border-color: rgb(117, 9, 131);
-  }
-
-  #mainobj{
-    font-family: fantasy, cop;
-    text-align: center;
-    background-color: rgb(255, 255, 255, 0.5);
-  }
-
-  .vp{
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    text-align: justify;
-    align-content: center;
-    text-decoration: none;
-  }
-
-  .vp-item{
-    background-color: transparent;
-  }
+li a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  align-content: left;
+  font-size: x-large;
+}
 
 
-  #rules{
+li a:hover {
+  background-color: #a034ff;
+  border-radius: 200px;
+  border-style: groove;
+  border-color: rgb(117, 9, 131);
+}
+
+#mainobj{
+  font-family: fantasy, cop;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.vp{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  align-content: center;
+  text-decoration: none;
+}
+
+.vp-item{
+  background-color: transparent;
+}
+
+
+#rules{
+  font-family: fantasy, cop;
+  text-align: center;
+  overflow: auto;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+#victorypoints{
     font-family: fantasy, cop;
     text-align: center;
     overflow: auto;
     background-color: rgb(255, 255, 255, 0.5);
-  }
-
-  #victorypoints{
-      font-family: fantasy, cop;
-      text-align: center;
-      overflow: auto;
-      background-color: rgb(255, 255, 255, 0.5);
-  }
+}
 
 .bg {
     background-image: url(assets/images/cube.avif);
