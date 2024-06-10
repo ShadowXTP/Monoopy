@@ -68,6 +68,7 @@ li a {
 }
 
 
+
 li a:hover {
   background-color: #a034ff;
   border-radius: 200px;
@@ -98,14 +99,12 @@ li a:hover {
   font-family: fantasy, cop;
   text-align: center;
   overflow: auto;
-  background-color: rgb(255, 255, 255, 0.5);
 }
 
 #victorypoints{
     font-family: fantasy, cop;
     text-align: center;
     overflow: auto;
-    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .bg {
@@ -119,6 +118,11 @@ li a:hover {
   background-color: white;
 }
 
+.vp-body{
+  text-align: center;
+  background-color: white;
+}
+
 
 /* GameTracker.html  */
 #trait-selector {
@@ -129,4 +133,11 @@ li a:hover {
 #trait-info{
   color:#000000c2;
   font-family: fantasy, cop;
+}
+
+#bigbody{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
 }
