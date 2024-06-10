@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 5px;
-  background-color: indigo;
+  background-color: rgb(75, 0, 130, 0.6);;
 }
 
 .flushednav {
@@ -35,6 +35,9 @@ body {
   align-self: center;
 }
 
+.navbarimage{
+  background-image: url(assets/images/NavBarBD.jpg);
+}
 
 ol, ul{
   padding: 0%;
@@ -71,8 +74,8 @@ li a {
 
 li a:hover {
   background-color: #a034ff;
-  border-radius: 200px;
-  border-style: groove;
+  border-radius: 15px;
+  border-style: solid;
   border-color: rgb(117, 9, 131);
 }
 
@@ -135,9 +138,16 @@ li a:hover {
   font-family: fantasy, cop;
 }
 
-#bigbody{
+.bigbody {
   display: flex;
-  align-self: center;
   justify-content: center;
-  justify-self: center;
+  align-items: center;
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+
+#biggerbody {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Ensure the container takes the full width of the viewport */
 }
