@@ -105,9 +105,9 @@ li a:hover {
 }
 
 #victorypoints{
-    font-family: fantasy, cop;
-    text-align: center;
-    overflow: auto;
+  font-family: fantasy, cop;
+  text-align: center;
+  overflow: auto;
 }
 
 .bg {
@@ -128,9 +128,31 @@ li a:hover {
 
 
 /* GameTracker.html  */
+
+.achivement-body{
+  background-color: white;
+}
+
+
+
+.achievementcontainer{
+  font-family: fantasy, cop;
+  text-align: center;
+  overflow: auto;
+}
+
+
 #trait-selector {
   color: #000000c2;
   font-family: fantasy, cop;
+}
+
+.achievement{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  align-content: center;
+  text-decoration: none;
 }
 
 #trait-info{
@@ -150,4 +172,11 @@ li a:hover {
   justify-content: center;
   align-items: flex-start;
   width: 100%; /* Ensure the container takes the full width of the viewport */
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
 }
