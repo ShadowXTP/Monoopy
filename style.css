@@ -174,9 +174,14 @@ li a:hover {
   width: 100%; /* Ensure the container takes the full width of the viewport */
 }
 
-input[type="checkbox"] {
+.av:hover{
+  transform: scale(1.1);
+}
+
+.checked-card {
+  background-color: #52fa76; /* Example color: Gold */
+}
+
+input[type="checkbox"]{
   appearance: none;
-  position: relative;
-  width: 100%;
-  cursor: pointer;
 }
