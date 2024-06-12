@@ -36,82 +36,90 @@
         </ul>
     </div>
 </div>
-<!--------------- BALLS ------------------------------------------------------>
+<!--------------- TRAITS ------------------------------------------------------>
 <div id="biggerbody">
   <div id="bigbody", class="col-9">
     <div id="mainobj">
       <h1 class="stats">STAT TRACKER</h1>
-      <div id="trait-selector">
-        <label for="trait1">Select Trait 1:</label>
-        <select id="trait1">
-          <option value="Prediction">Prediction</option>
-          <option value="Businessman">Businessman</option>
-          <option value="Insurance">Insurance</option>
-          <option value="Crowd Favourite">Crowd Favourite</option>
-          <option value="Master Negotiator">Master Negotiator</option>
-          <option value="Blizzard">Blizzard</option>
-          <option value="Parasite">Parasite</option>
-          <option value="Hibernate">Hibernate</option>
-          <option value="Welfare">Welfare</option>
-          <option value="Desperation">Desperation</option>
-          <option value="Reserved Parking">Reserved Parking</option>
-          <option value="Lucky Draw">Lucky Draw</option>
-          <option value="Overpower">Overpower</option>
-          <option value="Warrigal Road">Warrigal Road</option>
-          <option value="Nates House">Nates House</option>
-          <option value="Viv Fart">Viv Fart</option>
-          <option value="Bees Dick">Bees Dick</option>
-          <option value="Conductor">Conductor</option>
-          <option value="Warden">Warden</option>
-          <option value="Nepotism Baby">Nepotism Baby</option>
-          <option value="Estate Auctioneer">Estate Auctioneer</option>
-          <option value="The Godfather">God Father</option>
-          <option value="Craps Addict">Craps Addict</option>
-          <option value="Secret Tenant">Secret Tenant</option>
-        </select>
-    <!--THIS COMMENT LITERALLY EXISTS SO I CAN REDEPLOY THIS, I HAVE NO CLUE AS TO HOW ELSE TO REDEPLOY-->
-        <label for="trait2">Select Trait 2:</label>
-        <select id="trait2">
-          <option value="Prediction">Prediction</option>
-          <option value="Businessman">Businessman</option>
-          <option value="Insurance">Insurance</option>
-          <option value="Crowd Favourite">Crowd Favourite</option>
-          <option value="Master Negotiator">Master Negotiator</option>
-          <option value="Blizzard">Blizzard</option>
-          <option value="Parasite">Parasite</option>
-          <option value="Hibernate">Hibernate</option>
-          <option value="Welfare">Welfare</option>
-          <option value="Desperation">Desperation</option>
-          <option value="Reserved Parking">Reserved Parking</option>
-          <option value="Lucky Draw">Lucky Draw</option>
-          <option value="Overpower">Overpower</option>
-          <option value="Warrigal Road">Warrigal Road</option>
-          <option value="Nates House">Nates House</option>
-          <option value="Viv Fart">Viv Fart</option>
-          <option value="Bees Dick">Bees Dick</option>
-          <option value="Conductor">Conductor</option>
-          <option value="Warden">Warden</option>
-          <option value="Nepotism Baby">Nepotism Baby</option>
-          <option value="Estate Auctioneer">Estate Auctioneer</option>
-          <option value="The Godfather">God Father</option>
-          <option value="Craps Addict">Craps Addict</option>
-          <option value="Secret Tenant">Secret Tenant</option>
-        </select>
-        <button onclick="selectTraits()">Select Traits</button>
-      </div>
-
-      <div id="trait-info">
-        <div class="trait">
+    <div id="trait-selector">
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <label for="trait1"><img src="images\wipwip.png" class="av-img-top img-fluid" style="border-style:solid; border-bottom: none;"></label>
+        <div class="av-body" style="border-style:solid;">
           <h2 id="trait1-name">Trait 1 Name</h2>
           <p id="trait1-description">Description</p>
           <p>Uses left: <span id="trait1-uses">0</span></p>
-        </div>
-        <div class="trait">
+        <p>Select Trait 1:<select id="trait1"></p>
+          <option value="Prediction">Prediction</option>
+          <option value="Businessman">Businessman</option>
+          <option value="Insurance">Insurance</option>
+          <option value="Crowd Favourite">Crowd Favourite</option>
+          <option value="Master Negotiator">Master Negotiator</option>
+          <option value="Blizzard">Blizzard</option>
+          <option value="Parasite">Parasite</option>
+          <option value="Hibernate">Hibernate</option>
+          <option value="Welfare">Welfare</option>
+          <option value="Desperation">Desperation</option>
+          <option value="Reserved Parking">Reserved Parking</option>
+          <option value="Lucky Draw">Lucky Draw</option>
+          <option value="Overpower">Overpower</option>
+          <option value="Warrigal Road">Warrigal Road</option>
+          <option value="Nates House">Nates House</option>
+          <option value="Viv Fart">Viv Fart</option>
+          <option value="Bees Dick">Bees Dick</option>
+          <option value="Conductor">Conductor</option>
+          <option value="Warden">Warden</option>
+          <option value="Nepotism Baby">Nepotism Baby</option>
+          <option value="Estate Auctioneer">Estate Auctioneer</option>
+          <option value="The Godfather">God Father</option>
+          <option value="Craps Addict">Craps Addict</option>
+          <option value="Secret Tenant">Secret Tenant</option>
+        </select>
+      </div>
+    </div>
+    <!--THIS COMMENT LITERALLY EXISTS SO I CAN REDEPLOY THIS, I HAVE NO CLUE AS TO HOW ELSE TO REDEPLOY-->
+    <div class="col-2">
+      <label for="trait2"><img src="images\wipwip.png" class="av-img-top img-fluid" style="border-style:solid; border-bottom: none;"></label>
+      <div class="av-body" style="border-style:solid;">
           <h2 id="trait2-name">Trait 2 Name</h2>
           <p id="trait2-description">Description</p>
           <p>Uses left: <span id="trait2-uses">0</span></p>
-        </div>
-      </div>
+      <p>Select Trait 2:<select id="trait2"></p>
+        <option value="Prediction">Prediction</option>
+        <option value="Businessman">Businessman</option>
+        <option value="Insurance">Insurance</option>
+        <option value="Crowd Favourite">Crowd Favourite</option>
+        <option value="Master Negotiator">Master Negotiator</option>
+        <option value="Blizzard">Blizzard</option>
+        <option value="Parasite">Parasite</option>
+        <option value="Hibernate">Hibernate</option>
+        <option value="Welfare">Welfare</option>
+        <option value="Desperation">Desperation</option>
+        <option value="Reserved Parking">Reserved Parking</option>
+        <option value="Lucky Draw">Lucky Draw</option>
+        <option value="Overpower">Overpower</option>
+        <option value="Warrigal Road">Warrigal Road</option>
+        <option value="Nates House">Nates House</option>
+        <option value="Viv Fart">Viv Fart</option>
+        <option value="Bees Dick">Bees Dick</option>
+        <option value="Conductor">Conductor</option>
+        <option value="Warden">Warden</option>
+        <option value="Nepotism Baby">Nepotism Baby</option>
+        <option value="Estate Auctioneer">Estate Auctioneer</option>
+        <option value="The Godfather">God Father</option>
+        <option value="Craps Addict">Craps Addict</option>
+        <option value="Secret Tenant">Secret Tenant</option>
+      </select>
+    </div>
+    </div>
+  </div>
+  <div>
+  <p></p>
+  <button onclick="selectTraits()" class="lockin" style="width: 150px;">Select Traits</button>
+  </div>
+</div>
+<p></p>
+      <!--ACHIVEMENTS!-->
       <div id="achievements"><h1>Achievements:</h1>
         <div class="container">
             <div class="row justify-content-center">

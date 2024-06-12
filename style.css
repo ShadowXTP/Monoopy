@@ -185,3 +185,8 @@ li a:hover {
 input[type="checkbox"]{
   appearance: none;
 }
+
+#lockin{
+  width: 150px;
+}
+
