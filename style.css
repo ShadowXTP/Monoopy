@@ -7,28 +7,152 @@
 
 
 body{
+    height: 100vh;
     background-color: #8865a3;
+    background-image: url(/assets/images/wp2445252.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #ffff ;
+    font-size: 1rem;
+}
+
+a:hover{
+    color:#8865a3;
+    transition: 0.15s ease-in
+}
+
+
+
+/* HEADER */
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: black;
+}
+
+
+.logosize{
+    size: 15%;
 }
 
 .navbar{
-    background: #281636;
-    background-image: linear-gradient(to right, #281636 0%, #4d0d49 100%);
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.navbar img{
-    width: 15%;
-    justify-self: center;
-}
-
-.navbar__container{
-    display: flex;
     justify-content: space-between;
-    
+}
+
+.navbar .logo a{
+    font-size: 1.5em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.logo-img {
+    margin-right: 10px; /* Adds space between image and text */
+    width: 2em; /* Set desired width for the image */
+    height: auto; /* Keep the aspect ratio */
+    vertical-align: middle;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .toggle_btn{
+    cursor: pointer;
+    color: #8865a3;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.action_btn{
+    background-color: orange;
+    color: #ffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #ffff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/*dropdown*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;;
+}
+
+
+/* responsive */
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    @media (max-width: 576px) {
+        .dropdown_menu{
+            left: 2rem;
+            width: unset;
+        }
+    }
 }
