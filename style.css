@@ -189,6 +189,7 @@ header {
 
 h2{
     text-align: center;
+    color: rgb(245, 167, 245);
 }
 
 .action_btn {
@@ -237,6 +238,12 @@ h2{
     column-gap: 25px;
 }
 
+.instructions{
+    column-count: 2;
+    column-gap: 20px;
+    font-size: 17px;
+    padding-top: 1%;
+}
 
 .pieceicon{
     max-width: 15%;
@@ -244,21 +251,23 @@ h2{
     vertical-align: middle;
 }
 
-.pieceicon:active{
-    transform: scale(2, 2);
-    transition: 1.15s ease-in;
-}
 
 
 .inctypes{
-    -moz-column-count: 3;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 20px;
     column-count: 3;
-    column-gap: 25px;
+    column-gap: 35px;
     padding-top: 5px;
+
 }
+
+.inctypes div{
+    break-inside: avoid;
+}
+
+.movetypes div{
+    break-inside: avoid;
+}
+
 
 .movetypes{
     -moz-column-count: 3;
@@ -269,16 +278,29 @@ h2{
     column-gap: 25px;
 }
 
+.welcome{
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 18s ease infinite;
+}
 
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%
+    }
 
+    50% {
+        background-position: 100% 25%
+    }
 
-
-
-
-
-
-
-
+    100% {
+        background-position: 0% 50%
+    }
+}
 
 
 
