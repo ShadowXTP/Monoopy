@@ -31,6 +31,7 @@ body {
     opacity: 15%;
     background-image: url(assets/images/HD-wallpaper-low-poly-3d-texture-geometric-shapes-low-poly-art-3d-textures-low-poly-textures-black-low-poly-background-geometric-textures.jpg);
     background-size: cover;
+    z-index: -15;
 }
 
 /* Background areas on the sides */
@@ -129,9 +130,12 @@ body {
 }
 
 
-li {
+
+li{
     list-style: none;
 }
+
+
 
 a {
     text-decoration: none;
@@ -183,6 +187,13 @@ header {
 }
 
 
+h2{
+    text-align: center;
+}
+
+
+
+
 .action_btn {
     background-color: rgb(84, 14, 94);
     color: #fff;
@@ -202,6 +213,7 @@ header {
     border-radius: 25px;
     padding-bottom: 5px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .row {
@@ -224,14 +236,20 @@ header {
     -moz-column-gap: 20px;
     -webkit-column-count: 2;
     -webkit-column-gap: 20px;
-    column-count: 2;
-    column-gap: 20px;
+    column-count: 3;
+    column-gap: 25px;
 }
 
 
 .pieceicon{
     max-width: 15%;
+    max-height: 5%;
     vertical-align: middle;
+}
+
+.pieceicon:active{
+    transform: scale(2, 2);
+    transition: 1.15s ease-in;
 }
 
 /* Additional responsive styles */

@@ -6,7 +6,6 @@
     <title>Monoopy</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0dbc7e9771.js" crossorigin="anonymous"></script>
-    <script src="dropdown.js"></script>
 </head>
 <body>
 
@@ -36,19 +35,6 @@
                     <li><a href="/traits.html">Game Tracker</a></li>
                 </div>
         </header>
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-            const toggleBtnIcon = document.querySelector('.toggle_btn i')
-            const dropDownMenu = document.querySelector('.dropdown_menu')
-    
-            toggleBtn.onclick = function () {
-                dropDownMenu.classList.toggle('open')
-                const isOpen = dropDownMenu.classList.contains('open')
-    
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-            }
-        </script>
         <!--END OF NAV-->
         <!-- Rules and Info Part 1 -->
         <div class="randi">
@@ -56,7 +42,6 @@
                 <h1 id="welcome">Welcome to Monoopy!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula quis felis pharetra suscipit non nec tortor. Morbi ornare purus vitae erat laoreet tempor. Vivamus et ante dapibus ante egestas molestie eget eu mauris. Phasellus consectetur est dolor, vitae maximus dui porttitor id. Integer condimentum velit quis ipsum bibendum tincidunt. Quisque porta orci at ex iaculis consectetur. Duis ac libero purus. Etiam vel urna sed mi pellentesque aliquam in nec nisl. Phasellus consectetur vestibulum augue, maximus lacinia ante euismod a. Donec tellus nunc, convallis nec maximus eu, auctor nec mi. In non arcu lorem. Nullam eget bibendum arcu. Quisque luctus vel urna sit amet consectetur. Quisque id ligula lectus. Sed non sem eget odio vestibulum imperdiet eu porta neque. Aenean nec ante ac mauris blandit bibendum. Nullam vitae justo non dolor commodo rhoncus nec non tortor. Etiam dignissim vulputate justo.</p>
             </section>
-            
             <div class="row">
                 <div class="column">
                     <section class="section">
@@ -69,13 +54,13 @@
                         <ul class="iconul">
                             <li><img src="assets/images/pieceicons/wormhole.png" class="pieceicon"> 2x Worm Holes</img></li>
                             <li><img src="assets/images/pieceicons/parasite.png" class="pieceicon"> 6x Parasite</img></li>
-                            <li><img src="assets/images/pieceicons/godfather.png" class="pieceicon"> 1x God Hitman</li>
+                            <li><img src="assets/images/pieceicons/godfather.png" class="pieceicon"> 1x God Father Hitman</li>
                             <li><img src="assets/images/pieceicons/robber.png" class="pieceicon"> 1x Robber</img></li>
                             <li><img src="assets/images/pieceicons/angel.png" class="pieceicon"> 1x Guardian Angel</img></li>
                             <li><img src="assets/images/pieceicons/roadworks.png" class="pieceicon"> 1x Road Works</img></li>
                             <li><img src="assets/images/pieceicons/mastern.png" class="pieceicon"> 6x Master Negotiator Tokens</img></li>
                             <li><img src="assets/images/pieceicons/poop.png" class="pieceicon"> 18x Viv Fart Tokens</img></li>
-                            <li><img src="assets/images/pieceicons/nateshouse.png" class="pieceicon"> 4x Nates House</img></li>
+                            <li><img src="assets/images/pieceicons/nateshouse.png" class="pieceicon" id="nateshouse"> 4x Nates House</img></li>
                             <li><img src="assets/images/pieceicons/devcard.png" class="pieceicon"> 40x Dev Cards</img></li>
                             <li><img src="assets/images/pieceicons/chance.png" class="pieceicon"> 40x Goodluck Cards</img></li>
                         </ul>
@@ -142,6 +127,6 @@
     <!-- Left and Right Backgrounds -->
     <div class="left-background"></div>
     <div class="right-background"></div>
-
 </body>
+<script src="/notusingitrn.js"></script>
 </html>
