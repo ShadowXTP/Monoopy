@@ -20,8 +20,8 @@ toggleBtnIcon.classList = isOpen
 
 //CHANGE NATES HOUSE TO NATE
 document.getElementById("nateshouse").addEventListener("click", function() {
-    let originalImage = "/assets/images/pieceicons/nateshouse.png";
-    let newImage = "/assets/images/NATE2.png";
+    let originalImage = "assets/images/pieceicons/nateshouse.png";
+    let newImage = "assets/images/NATE2.png";
     
     // Change the image to the new one
     this.src = newImage;
