@@ -191,9 +191,6 @@ h2{
     text-align: center;
 }
 
-
-
-
 .action_btn {
     background-color: rgb(84, 14, 94);
     color: #fff;
@@ -251,6 +248,39 @@ h2{
     transform: scale(2, 2);
     transition: 1.15s ease-in;
 }
+
+
+.inctypes{
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 25px;
+    padding-top: 5px;
+}
+
+.movetypes{
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Additional responsive styles */
 @media (max-width: 992px) {
