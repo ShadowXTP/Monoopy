@@ -1,4 +1,5 @@
-*{
+/* Basic reset */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,105 +7,52 @@
 }
 
 
-html, body{
-    height: 100%;
-}
-
+/* Layout for the body */
 body {
-    background-color: #8865a3;
-    background-image: url(assets/images/backgroundmono.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Keeps the background fixed as you scroll */
-}
-
-li {
-    list-style: none;
-}
-
-
-
-a {
-    text-decoration: none;
-    color: #ffff ;
-    font-size: 1rem;
-}
-
-a:hover{
-    color:#8865a3;
-    transition: 0.15s ease-in
-}
-
-
-
-/* HEADER */
-header{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; /* Neutral background */
     position: relative;
-    padding: 0 2rem;
-    background-color: black;
-    display: sticky;
-    z-index: 1000;
 }
 
-
-.logosize{
-    size: 15%;
+/* Main content styling */
+.main-content {
+    width: 80%; /* Main content width */
+    background-color: rgb(52, 22, 53);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
 }
 
-.navbar{
-    width: 100%;
-    height: 60px;
-    max-width: 2000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.mainbg{
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    opacity: 15%;
+    background-image: url(assets/images/HD-wallpaper-low-poly-3d-texture-geometric-shapes-low-poly-art-3d-textures-low-poly-textures-black-low-poly-background-geometric-textures.jpg);
+    background-size: cover;
 }
 
-.navbar .logo a{
-    font-size: 1.5em;
-    font-weight: bold;
-    vertical-align: middle;
+/* Background areas on the sides */
+.left-background, .right-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%; /* Width of the side areas */
+    z-index: 1;
+    filter: brightness(75%);
 }
 
-.logo-img {
-    margin-right: 10px; /* Adds space between image and text */
-    width: 2em; /* Set desired width for the image */
-    height: auto; /* Keep the aspect ratio */
-    vertical-align: middle;
+.left-background {
+    left: 0;
+    background-image: url(assets/images/leftside.png); /* Your background image */
+    background-size: cover;
 }
 
-.navbar .links{
-    display: flex;
-    gap: 1.5rem;
-}
-
-.navbar .toggle_btn{
-    cursor: pointer;
-    color: #8865a3;
-    font-size: 1.5rem;
-    display: none;
-}
-
-.action_btn{
-    background-color: orange;
-    color: #ffff;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.action_btn:hover{
-    scale: 1.05;
-    color: #ffff;
-}
-
-.action_btn:active{
-    scale: 0.95;
+.right-background {
+    right: 0;
+    background-image: url(assets/images/right.png); /* Your background image */
+    background-size: cover;
 }
 
 /*dropdown*/
@@ -140,8 +88,8 @@ header{
 }
 
 
-/* responsive */
-@media (max-width: 992px){
+/* Responsive adjustments */
+@media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -155,69 +103,150 @@ header{
         display: block;
     }
 
-    @media (max-width: 576px) {
-        .dropdown_menu{
-            left: 2rem;
-            width: unset;
-        }
+
+    .main-content {
+        width: 80%; /* Make content larger on smaller screens */
+    }
+
+    .left-background, .right-background {
+        width: 10%; /* Reduce width of the side areas */
     }
 }
 
-/*body paragraph 1*/
-.backgroundblur .randi{
-    background: rgba(252, 252, 252, 0.13);
-    backdrop-filter: blur(15px);
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+@media (max-width: 576px) {
+    .main-content {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .left-background, .right-background {
+        display: none; /* Hide side backgrounds on mobile */
+    }
+
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
 }
 
 
+li {
+    list-style: none;
+}
 
-.randi{
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #f799df;
+    transition: 0.15s ease-in;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    background: radial-gradient(ellipse, rgb(26, 0, 26) 5%, #110303 100%);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo-img {
+    margin-right: 10px;
+    width: 2em;
+    height: auto;
+    vertical-align: middle;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .toggle_btn{
+    cursor: pointer;
+    color: #8865a3;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+.action_btn {
+    background-color: rgb(84, 14, 94);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.randi {
     padding: 30px;
 }
 
 .randi .section {
-    margin-bottom: 30px;
-    position: relative;
-    background-color: rgba(235, 224, 250, 0.432);
-    justify-content: center;
-    text-align: center;
+    color: #f0f0f0;
     border-radius: 25px;
     padding-bottom: 5px;
+    margin-bottom: 30px;
 }
 
-
-.randi h2 {
-    font-size: 1.75em;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.randi ul, ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.randi ul li, ol li {
-    margin-bottom: 10px;
-}
-
-.row{
+.row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     column-gap: 1%;
 }
-  
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
 }
 
-/*funny comment to fix deployment*/
+.iconul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+
+.pieceicon{
+    max-width: 15%;
+    vertical-align: middle;
+}
+
+/* Additional responsive styles */
+@media (max-width: 992px) {
+    .navbar .links, .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
